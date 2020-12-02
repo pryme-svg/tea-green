@@ -96,28 +96,16 @@ a {
 	color: var(--foreground);
 }
 
-button {
-
-}
 a:hover,
-input[id="searchbox"]:hover,
-input[id="searchbox"]:focus {
+input[id="input_box"]:hover,
+input[id="input_box"]:focus {
 	color: var(--card-bg);
 	background: var(--header);
-	transform: translateY(-3px);
 	box-shadow: 0 3px 10px rgba(2, 2, 2, 0.45);
 	outline: none;
 }
 
-.search {
-	margin: 0px 0px 50px 30px;
-	border: none;
-	opacity: 1;
-	transition: 1s;
-	z-index: 1;
-}
-
-input[id="searchbox"] {
+input[id="input_box"] {
 	font-family: var(--global-font);
 	font-size: 22px;
 	color: var(--header);
@@ -130,28 +118,17 @@ input[id="searchbox"] {
 	border-radius: 0px;
 }
 
-input[id="searchbox"]::placeholder {
+input[id="input_box"]::placeholder {
 	color: var(--foreground);
 	transition: .2s;
 }
 
-input[id="searchbox"]:focus::placeholder,
-input[id="searchbox"]:hover::placeholder { 
+input[id="input_box"]:focus::placeholder,
+input[id="input_box"]:hover::placeholder { 
 	color: var(--card-bg);
 	transition: .2s;
 }
 
-#searchbox {
-	height: 38px;
-}
-
-form.searchform button {
-	border: 0px;
-	color: #AA9984;
-	background: #282828;
-	padding-top: 40px;
-	font-size: 35px;
-}
 
 .date {
 	position:absolute;
@@ -159,4 +136,19 @@ form.searchform button {
 	right:85%;
 	color: #AA9984;
 }
+.engine {
+	padding-bottom: 2px;
+	padding-right: 15px;
+}
 
+.search_box {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  border-radius: 0px 0px;
+  box-shadow: 0px 0px 0px;
+  align-self: center;
+  height: 40px;
+}
